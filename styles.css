@@ -1,0 +1,106 @@
+html {
+	height: 100%;
+}
+
+body {
+	font: 1em Verdana, Arial, Helvetica, sans-serif;
+		
+	/* fond avec un dégradé de couleur (blanc en haut, gris en bas) */
+	background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(210, 210, 210));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(210, 210, 210)));
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(210, 210, 210));
+}
+		
+/* style de la division id="page" */
+div#page {
+	/* largeur, centrage avec des marges auto, padding, bordure noire, alignement gauche */
+	width: 600px;
+	margin: 20px auto;
+	padding: 0px 20px;
+	border: #000 1px solid; 
+	text-align: left;
+			
+	/* coins arrondis avec un rayon de 15 pixels */
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	border-radius: 15px;
+			
+	/* fond avec un dégradé de couleur (blanc en haut, gris léger en bas) */
+	background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(210, 210, 210));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(210, 210, 210)));
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(225, 225, 225));
+}
+
+/* styles des zones de saisies de textes, de mots de passe et d'adresses mail */
+input[type=text], input[type=password], input[type=email] {
+	border: solid 1px grey;
+	width: 200px;
+	display: inline-block;
+}
+
+/* styles des <label> */
+label {
+	width: 200px;
+	text-align: left;
+	display: inline-block;
+}
+
+/* style du bouton de validation du formulaire */
+input[type=submit] {
+	font: 1em helvetica, sans-serif;
+	border: solid 1px grey;
+	width: 100px;
+	display: inline-block;
+	margin-left: 250px;
+	background-color: #ddd;
+}
+
+/* transformation en boutons des liens hypertextes <a> avec l'attribut class="bouton-menu" */
+a.bouton-menu {
+	/* police, couleur et alignement du texte, style du lien */
+	font: 1em helvetica, sans-serif;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+		
+	/* dimensions, margin, padding, type d'affichage, bordure */
+	width: 300px;
+	margin: 20px auto;
+	padding: 2px;
+	display: block;
+	border: solid 1px grey;
+}
+
+/* style du message d'erreur */
+p#message-erreur {
+	width: 600px;
+	color: #f00;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* styles des tableaux */
+table {
+	/* pas d'espace entre les cellules */
+	border-spacing: 0;
+	
+	/* largeur de 600px, marges de 30px en haut et en bas, et centrage horizontal */
+	width: 600px;
+	margin: 30px auto 30px auto;
+	
+	/* couleur d'arrière-plan de 230, 20, 230 */
+	background-color: rgb(230, 230, 230);
+	
+	/* bordure de 1px couleur 000 pour l'ensemble du tableau */
+	border: 1px solid #000;
+}
+
+/* styles des cellules <td> et <th> des tableaux */
+td, th {
+	/* cellules encadrées par une bordure de 1px couleur 000, padding 5px */
+	border: 1px solid #000;
+	padding: 5px;
+}
